@@ -8,7 +8,7 @@ def publishMethod():
     rospy.init_node('publish_node', anonymous=True) # defining the ros node - publish node 
     rate = rospy.Rate(10) # 10hz # fequency at which the publishing occurs
     while not rospy.is_shutdown():
-        publishString = 32 # varibale 
+        publishString = 3232 # varibale 
         rospy.loginfo("Data is being sent")  # to print on the terminal 
         pub.publish(publishString) # publishing 
         rate.sleep()

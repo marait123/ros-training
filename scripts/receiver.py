@@ -3,7 +3,7 @@ import rospy
 from std_msgs.msg import String, Float64
 
 def subscriberCallBack(data):
-    rospy.loginfo(rospy.get_caller_id() + " I recieved --  %s", data.data) #prints on terminal
+    rospy.loginfo(rospy.get_caller_id() + " I recieved the following --  %s", data.data) #prints on terminal
     
 def listener():
     rospy.init_node('subscriberNode', anonymous=True)
